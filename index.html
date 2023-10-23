@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aplikasi Pemesanan Tiket Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Aplikasi Pemesanan Tiket Travel</h1>
+    <form id="orderForm">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" required />
+
+      <label for="tujuan">Tujuan:</label>
+      <select id="tujuan">
+        <option value="Jakarta">Jakarta</option>
+        <option value="Surabaya">Surabaya</option>
+        <option value="Bandung">Bandung</option>
+        <option value="Yogyakarta">Yogyakarta</option>
+      </select>
+
+      <label for="harga">Harga Tiket:</label>
+      <input type="text" id="harga" required />
+
+      <label for="jumlahTiket">Jumlah Tiket:</label>
+      <select id="jumlahTiket">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+
+      <label for="member">Member:</label>
+      <input type="checkbox" id="member" />
+
+      <label for="diskon">Diskon:</label>
+      <input type="text" id="diskon" />
+
+      <label for="totalBayar">Total Bayar:</label>
+      <input type="text" id="totalBayar" readonly />
+
+      <button type="button" onclick="hitungTotalBayar()">
+        Hitung Total Bayar
+      </button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
